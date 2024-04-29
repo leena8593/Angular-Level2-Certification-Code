@@ -17,7 +17,7 @@ export const routes: Routes = [
         (movie) => movie.MovieInfoComponent
       ),
     resolve: {
-      matches: movieDetailsResolver,
+      movies: movieDetailsResolver,
     },
     
   },

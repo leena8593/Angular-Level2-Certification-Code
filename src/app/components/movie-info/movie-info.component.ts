@@ -55,7 +55,7 @@ export class MovieInfoComponent implements OnInit{
     }
 
   ngOnInit(): void {
-    this.movieData = this.route.snapshot.data['matches'] as IMovieData;
+    this.movieData = this.route.snapshot.data['movies'] as IMovieData;
   }
   
   
