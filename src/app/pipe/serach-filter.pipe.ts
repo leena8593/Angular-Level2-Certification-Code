@@ -15,7 +15,7 @@ export class SerachFilterPipe implements PipeTransform {
 
     return value.filter((item: IMovieData) => {
       return JSON.stringify(item.title).toLowerCase().includes(movieName.toLowerCase()) 
-      && JSON.stringify(item.release_date).toLowerCase().includes(releaseDate);
+      && JSON.stringify(item.release_date.substring(0,4)).toLowerCase().includes(releaseDate);
     })
   }
 
