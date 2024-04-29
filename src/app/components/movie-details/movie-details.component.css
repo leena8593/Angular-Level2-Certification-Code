@@ -1,11 +1,11 @@
 body {
-    background-color: grey;
+    background-color: #f5faed;;
   }
 
   .movie-details {
     margin: 198px;
     overflow: auto;
-    background-color: grey;
+    background-color: #f5faed;;
     color: black;
   }
 
@@ -17,19 +17,19 @@ body {
   .search-container{
     margin-left: 125px;
     color: black;
-    background-color: lightgray;
+    background-color: #dbe0d3;
     width: 80%;
     font-weight: bold; 
     height: 119px;
   }
 
   .search-fields{
-    background-color: lightgray;
+    background-color:#dbe0d3;
     margin-left: 30px;
   }
 
   .input-class{
-    background-color: lightgray;
+    background-color: #dbe0d3;
   }
 
 
@@ -37,7 +37,7 @@ body {
     width: 81%;
     margin-left: 239px;
     margin: 27px auto;
-    background-color: grey;
+    background-color: #f5faed;;
     padding: 20px;
   }
 
@@ -83,12 +83,12 @@ tr:nth-child(even) {
  .search-details-table-data {
   padding: 8px;
   text-align: left;
-  background: grey;
+  background: #f5faed;;
   color: black;
   border: none;
 }
 .details-button{
-  background-color: lightgray;
+  background-color: #dbe0d3;
   color: black;
 }
 
