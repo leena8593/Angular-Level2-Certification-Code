@@ -6,8 +6,8 @@ import { IMovieData } from '../components/movie-info/movie-info.component';
   standalone: true
 })
 export class SerachFilterPipe implements PipeTransform {
-  transform(value: IMovieData[], args1: string,args2: string): any {
-    if (!value) return null;
+  transform(value: IMovieData[], args1: string,args2: string): IMovieData[] {
+    if (!value) return value;
    if (!args1 && !args2) return value;
 
     let movieName = args1;

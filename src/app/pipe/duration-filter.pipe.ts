@@ -6,8 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DurationFilterPipe implements PipeTransform {
   
-  transform(value: number): any {
-    if (!value) return null;
+  transform(value: number): string {
+    if (!value) return '';
    
 
     const hours = Math.floor(value / 60);
