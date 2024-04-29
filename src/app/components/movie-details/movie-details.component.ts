@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import {SerachFilterPipe}  from '../../pipe/serach-filter.pipe';
 import {DurationFilterPipe} from '../../pipe/duration-filter.pipe';
 
-import { MovieServiceService } from '../../services/movie-service.service';
+import { MovieService} from '../../services/movie-service';
 
 export interface IMovieData {
   id: number;
@@ -35,7 +35,7 @@ export class MovieDetailsComponent {
   movieDetails:IMovieData[]=[];
   hostname:string='';
 
-  constructor(private movieService: MovieServiceService) {}
+  constructor(private movieService: MovieService) {}
  
   ngOnInit(): void {
     this.getAllMovieDetails();

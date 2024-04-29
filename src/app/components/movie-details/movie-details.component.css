@@ -96,3 +96,7 @@ tr:nth-child(even) {
 .search-details-button{
   text-align: right;
 }
+
+input, select, textarea{
+  color: black;
+}

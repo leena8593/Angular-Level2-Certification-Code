@@ -2,25 +2,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-//import { IMovieData } from './model/IMovieData';
-//import { IMovieData } from '../../model/IMovieData';
-
-//import { MovieServiceService } from '../../services/movie-service.service';
 import { IMovieData } from '../components/movie-info/movie-info.component';
 
-//const baseUrl = 'http://localhost:4200/';
 
 @Injectable({
   providedIn: 'root'
 })
 
-export class MovieServiceService {
-
- // constructor() { }
-
-
-
-
+export class MovieService {
 
   constructor(private http: HttpClient) {}
 
