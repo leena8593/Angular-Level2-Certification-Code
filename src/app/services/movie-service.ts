@@ -18,7 +18,7 @@ export class MovieService {
   }
 
 
-  getMovieById(id: String): Observable<IMovieData>  {
+  getMovieById(id: string): Observable<IMovieData>  {
     return this.http.get<IMovieData>('movies/'+id);
   }
   
