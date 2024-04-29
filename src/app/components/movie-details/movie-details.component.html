@@ -21,8 +21,8 @@
     <table class="search-details-table">
       <tr >
         <td class="search-details-table-data">Release date: {{movie.release_date }}</td>
-        <td class="search-details-table-data">Budeget : {{movie.duration | durationFilter }} </td>
-        <td class="search-details-table-data">Duration : ${{movie.budget}} million</td>
+        <td class="search-details-table-data">Budget : ${{movie.budget}} million</td>
+        <td class="search-details-table-data">Duration : {{movie.duration | durationFilter }} </td>
         <td class="search-details-table-data search-details-button" rowspan="2" ><button [routerLink]="[movie.id]" class="details-button">Details</button></td>
        </tr>
     </table>
