@@ -1,9 +1,6 @@
 
 import { Routes } from '@angular/router';
-//import { detailsResolver } from './features/details/details.resolver';
-
 import { movieDetailsResolver } from './components/movie-info/movie-info-resolver';
-
 
 export const routes: Routes = [
   {
