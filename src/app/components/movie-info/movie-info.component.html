@@ -1,0 +1,46 @@
+
+
+
+<div class="movie-details-container">
+    <button routerLink="../">Back</button>
+<!-- <div class="back-button">
+    <a routerLink="../"><i class="fas fa-home"></i> Back</a>
+</div> -->
+<div class="movie-title"><h1>{{movieData.title}}</h1></div>
+<div class="movie-container">
+    
+    <img src={{movieData.poster}} alt="Movie Poster" class="movie-poster">
+    <div class="movie-details">
+       
+        <p class="movie-summary"><label class="movie-title"><b>Summary:</b></label>{{movieData.summary}}</p>
+       
+    </div>
+   
+</div>
+<div class="container">
+    <div class="movie-detail-title"><h1>Details</h1></div>
+   
+    <table>
+        <tr>
+            <td class="movie-detail-attribute">Box Office</td>
+            <td>$ {{movieData.box_office}} million</td>
+        </tr>
+        <tr>
+            <td class="movie-detail-attribute">Budget</td>
+            <td>$ {{movieData.budget}} million</td>
+        </tr>
+        <tr>
+            <td class="movie-detail-attribute">Duration</td>
+            <td>{{movieData.duration | durationFilter}}</td>
+        </tr>
+        <tr>
+            <td class="movie-detail-attribute">Producers</td>
+            <td>{{movieData.producers}}</td>
+        </tr>
+        <tr>
+            <td class="movie-detail-attribute">Cinematographers</td>
+            <td>{{movieData.cinematographers}}</td>
+        </tr>
+    </table>
+</div>
+</div>

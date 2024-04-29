@@ -1,0 +1,82 @@
+.movie-container {
+    display: flex;
+    align-items: flex-start;
+}
+.movie-poster {
+    width: 308px;
+    height: 375px;
+}
+.movie-details {
+    margin-left: 20px; /* Adjust the spacing as needed */
+}
+.movie-summary {
+    font-style: italic;
+    color: black;
+}
+
+.movie-title{
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    border: 0.5px solid #ddd; /* Thin border */
+    width: 100%;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    background: grey;
+    border: none;
+}
+th {
+    font-weight: bold; /* Bold first column */
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td{
+    border-bottom: 0.5px solid #ddd;/* Thick border for first column */
+    color: black;
+}
+
+td:first-child {
+    border-right: 1px solid  #ddd;/* Thick border for first column */
+    font-weight: bold; 
+    color: black;
+}
+
+.back-button {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.back-button a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.movie-info{
+    background: grey;
+}
+
+.movie-details-container{
+    width: 81%;
+    margin: 0px auto;
+    background-color: grey;
+    padding: 20px;
+}
+
+.movie-detail-title{
+    text-align: center;
+    color: black;
+}
+
+.movie-detail-attribute{
+    text-align: right;
+
+}

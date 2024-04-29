@@ -1,0 +1,69 @@
+
+<!-- <div>helllo</div> -->
+<div class="movie-details">
+  <div class="search-container">
+
+  <div class="search-header">Filters</div>
+  <div class="search-fields">
+    Title:
+    <input class="form-control input-class" type="text" placeholder="Search By Title" [(ngModel)]="searchByTitle">
+    Release Year:
+    <input class="form-control input-class" type="text" placeholder="Search By Release Year" [(ngModel)]="searchByReleaseYear">
+  </div>
+  
+  </div>
+  <div class="search-details">
+
+<ul>
+  @for(movie of movieDetails | serachFilter: searchByTitle : searchByReleaseYear ; track movie; let i = $index){
+  <li>
+    <h3>{{ movie.title }}</h3>
+    <table class="search-details-table">
+      <tr >
+        <td class="search-details-table-data">Release date: {{movie.release_date }}</td>
+        <td class="search-details-table-data">Budeget : {{movie.duration | durationFilter }} </td>
+        <td class="search-details-table-data">Duration : ${{movie.budget}} million</td>
+        <td class="search-details-table-data search-details-button" rowspan="2" ><button [routerLink]="[movie.id]" class="details-button">Details</button></td>
+       </tr>
+    </table>
+   
+    <!-- <button (click)="showDetails(movie)">Get Details</button> -->
+    <!-- <span  [routerLink]="[movie.id]"><button >Details</button></span> -->
+  </li>
+}
+
+</ul>
+</div>
+
+  
+
+      
+    </div>
+
+
+    <!-- <div class="search-container">
+      Title:
+      <input class="form-control" id="search1"  type="text" placeholder="Search" [(ngModel)]="searchText">
+      Release Year:
+      <input class="form-control"  id="search2" type="text" placeholder="Search" [(ngModel)]="searchText1">
+  </div>
+  <table id="dataTable">
+      <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+      </tr>
+      <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+      </tr>
+      <tr>
+          <td>Data 3</td>
+          <td>Data 4</td>
+      </tr>
+      <!-- Add more rows as needed -->
+  <!--</table> -->
+      
+      
+
+
+
